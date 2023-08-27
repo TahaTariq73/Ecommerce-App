@@ -1,7 +1,9 @@
 Install Dependencies
 For Backend - npm i
 
-For Frontend - cd frontend  npm i
+For Frontend - cd client - npm i
+
+Make sure to generate a build folder using this command - cd client - npm run build
 
 Env Variables
 Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
