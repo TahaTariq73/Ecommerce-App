@@ -1,0 +1,133 @@
+.navigation-body {
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid #E9E7E4;
+    width: 100%;
+    z-index: 2;
+}
+
+.navigation-body .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1000px;
+    height: 69px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navigation .menu-icon {
+    display: none;
+}
+
+.navigation .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.navigation .logo a {
+    text-decoration: none;
+}
+
+.navigation .logo span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #212322;
+}
+
+.navigation .navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 21px;
+    top: 50%;
+    left: 50%;
+    margin-top: 1px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navigation .navigation-links .link {
+    text-decoration: none;
+    color: #212322;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.navigation .navigation-links .link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+    position: absolute;
+    background-color: #212322;
+    border-radius: 8px;    
+}
+
+.navigation .navigation-links .link:hover::after {
+    width: 100%;
+}
+
+.navigation .navigation-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    gap: 14px;
+}
+
+.navigation .navigation-icons .icon {
+    font-size: 1.4rem;
+    color: #212322;
+    cursor: pointer;
+}
+
+.cart-navigation-icon {
+    position: relative;
+}
+
+.cart-navigation-icon span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cc1e1e;
+    color: white;
+    border-radius: 100%;
+    width: 7px;
+    height: 7px;
+}
+
+/* Changing MUI default styles */
+
+.MuiPopover-paper {
+    box-shadow: none !important;
+    border: 1px solid #E9E7E4;
+}
+
+/*  */
+
+@media screen and (max-width: 768px) {
+    .navigation .navigation-links {
+        display: none;
+    }
+
+    .navigation .menu-icon {
+        display: inline-block;
+    }
+}

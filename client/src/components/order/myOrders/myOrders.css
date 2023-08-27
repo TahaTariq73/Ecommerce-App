@@ -1,0 +1,46 @@
+.my-orders-body {
+    min-height: 100vh;
+    padding: 0 2rem;
+    padding-top: calc(69px + 24px);
+    padding-bottom: 48px;
+}
+
+.my-orders-body .my-orders {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.my-orders .mui-table-price {
+    color: #E65100;
+}
+
+/* Changing MUI default styles */
+
+.my-orders-body .MuiDataGrid-columnHeader {
+    background-color: #212322 !important;
+    color: #ffffff !important;
+    outline: none !important;
+}
+
+.MuiDataGrid-columnHeader .MuiDataGrid-columnHeaderTitle {
+    font-weight: 600 !important;
+}
+
+.my-orders-body .MuiDataGrid-columnHeader .MuiIconButton-root{
+    color: #ffffff !important;
+}
+
+.MuiDataGrid-iconSeparator {
+    display: none !important;
+}
+
+/*  */
+
+@media screen and (max-width: 435px) {
+    .my-orders-body {
+        padding: 0 1rem;
+        padding-top: calc(69px + 24px);
+        padding-bottom: 48px;    
+    }
+}

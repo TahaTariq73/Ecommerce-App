@@ -1,0 +1,105 @@
+.confirm-order-body {
+    min-height: 100vh;
+    padding: 24px 12px;
+    padding: 0 2rem;
+    padding-top: calc(69px + 24px);
+}
+
+.confirm-order-body .sub-heading {
+    font-weight: 500;
+}
+
+.confirm-order-body .sub-price {
+    color: #D86526;
+    font-weight: 600;
+}
+
+.confirm-order-body .confirm-order-page {
+    max-width: 900px;
+    margin: 36px auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.confirm-order-page .order-details {
+    width: 60%;
+}
+
+.confirm-order-page .order-summary-body {
+    width: 40%;
+}
+
+.confirm-order-page .order-summary {
+    border: 1px solid #E9E7E4;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-summary .total-price-confirm {
+    border-top: 1px solid #E9E7E4;
+    padding-top: 12px;
+}
+
+.confirm-order-page .order-summary div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm-order-page .confirm-shipping-info {
+    padding: 1rem;
+    border: 1px solid #E9E7E4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.confirm-order-page .confirm-cart-items {
+    padding: 1rem;
+    border: 1px solid #E9E7E4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 12px;
+}
+
+.confirm-cart-item .confirm-price {
+    font-size: 0.9rem;
+}
+
+.confirm-order-page .confirm-cart-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.confirm-order-page .confirm-cart-item img {
+    width: 60px;
+}
+
+.confirm-order-page .confirm-cart-items h3,
+.confirm-order-page .order-summary h3,
+.confirm-order-page .confirm-shipping-info h3 {
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 640px) {
+    .confirm-order-body .confirm-order-page {
+        flex-direction: column;
+    }
+
+    .confirm-order-page .order-details {
+        width: 100%;
+    }
+    
+    .confirm-order-page .order-summary-body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .confirm-order-body {
+        padding: 0 1rem;
+        padding-top: calc(69px + 24px);   
+    }
+}

@@ -1,0 +1,32 @@
+.order-details-admin {
+    display: flex;
+    gap: 1rem;
+}
+
+.order-details-admin .order-details-container {
+    flex-direction: column;
+    max-width: none;
+}
+
+.order-details-admin .order-details-container .order-info,
+.order-details-admin .order-details-container .order-items {
+    width: 100%;
+}
+
+.order-status-admin {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+    .order-details-admin {
+        flex-direction: column;
+    }
+
+    .order-status-admin {
+        width: 100%;
+    }
+}

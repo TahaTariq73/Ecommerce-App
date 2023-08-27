@@ -1,0 +1,64 @@
+.admin-panel-body {
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+}
+
+.admin-dashboard {
+    height: 200vh;
+}
+
+.dashboard-stats-grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.dashboard-stats-grids .dashboard-stat {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.dashboard-stats-grids .dashboard-stat h4 {
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+}
+
+.dashboard-stat .stat {
+    padding: 1.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E65100;
+}
+
+.dashboard-stat .month-stat {
+    color: #707070;
+    font-size: 0.9rem;
+}
+
+.pie-charts-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+    .dashboard-stats-grids {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pie-charts-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .dashboard-stats-grids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

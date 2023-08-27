@@ -1,0 +1,79 @@
+.login-signup-body {
+    min-height: 100vh;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background-color: #F7F6F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.login-signup-body .login-signup-container {
+    width: 390px;
+    border: 1px solid #E9E7E4;
+    background-color: white;
+}
+
+.tabpanel-content form {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    overflow: hidden;
+}
+
+.tabpanel-content form .form-link {
+    text-decoration: none;
+    color: #212322;
+}
+
+.tabpanel-content form .form-link:hover {
+    text-decoration: underline;
+}
+
+.login-signup-container .file-uploading-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-signup-container .file-name {
+    font-size: 0.9rem;
+}
+
+/* Overwriting default MUI styles */
+
+.MuiTab-root {
+    color: #212322 !important;
+    font-weight: 600 !important;
+    font-family: 'Jost', sans-serif !important;
+    width: 50% !important;
+    padding: 1.2rem 0 !important;
+}
+
+.MuiButton-fullWidth {
+    background-color: #212322 !important;
+    box-shadow: none !important;
+    margin-top: 12px !important;
+    font-weight: 600 !important;
+    font-family: 'Jost', sans-serif !important;
+    padding: 8px 0 !important;
+}
+
+.MuiInput-underline:after {
+    border-bottom-color: #212322 !important;
+}
+
+/*  */
+
+@media screen and (max-width: 435px) {
+    .login-signup-body {
+        padding: 0 1rem;
+    }
+
+    .login-signup-body .login-signup-container {
+        width: 100%;
+    }
+}

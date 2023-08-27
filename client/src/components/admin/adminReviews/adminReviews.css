@@ -1,0 +1,9 @@
+.admin-reviews-searchbar {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.admin-reviews-searchbar .product-id-search-input {
+    padding: 0.6rem;
+}

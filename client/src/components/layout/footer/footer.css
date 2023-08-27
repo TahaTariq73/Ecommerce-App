@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 69px;
+    border-top: 1px solid #E9E7E4;
+}
+
+.copy-right-subkart {
+    font-weight: 500;
+    color: #212322;
+}
+
+.footer .footer-icons {
+    display: flex;
+    gap: 0.4rem;
+} 
+
+.footer .footer-icons span {
+    color: #212322;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 435px) {
+    .footer {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .footer .footer-icons {
+        margin-top: 1rem;
+    }
+}

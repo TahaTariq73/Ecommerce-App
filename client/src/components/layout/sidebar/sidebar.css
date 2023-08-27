@@ -1,0 +1,27 @@
+.list-item-link {
+    text-decoration: none;
+    color: #212322;
+}
+
+.list-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem 0;
+    padding-bottom: 0.8rem;
+}
+
+.list-logo a {
+    text-decoration: none;
+    color: #212322;
+}
+
+.list-logo span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #212322;
+}

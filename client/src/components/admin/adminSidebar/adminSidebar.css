@@ -1,0 +1,114 @@
+.admin-panel {
+    margin-left: 250px;
+    width: 100%;
+}
+
+.admin-panel-comp {
+    padding: 2rem;
+    width: 100%;
+}
+
+.admin-panel-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212322;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #212322;
+    box-shadow: 0px 0px 4px #f5f5f5;
+}
+
+.admin-panel-header h2 {    
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.responsive-sidebar-trigger-btn {
+    display: none !important;
+}
+
+.responsive-admin-panel-sidebar,
+.admin-panel-sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E0E0E0;
+    height: 100vh;
+    background-color: white;
+}
+
+.admin-panel-sidebar {
+    min-width: 250px;
+    position: fixed;
+    width: 250px;
+}
+
+.responsive-admin-panel-sidebar .admin-sidebar-header,
+.admin-panel-sidebar .admin-sidebar-header {
+    padding: 1.2rem 2rem;
+}
+
+.responsive-admin-panel-sidebar .admin-sidebar-header a,
+.admin-panel-sidebar .admin-sidebar-header a {
+    text-decoration: none;
+    color: #212322;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.responsive-admin-panel-sidebar .admin-sidebar-item,
+.admin-panel-sidebar .admin-sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    color: #707070;
+    position: relative;
+    font-weight: 500;
+}
+
+.responsive-admin-panel-sidebar .admin-sidebar-item:hover,
+.responsive-admin-panel-sidebar .active-link, 
+.admin-panel-sidebar .admin-sidebar-item:hover,
+.admin-panel-sidebar .active-link {
+    color: #E65100;
+    background-color: #f5f5f5;
+}
+
+.responsive-admin-panel-sidebar .active-link::after,
+.admin-panel-sidebar .active-link::after {
+    content: "";
+    background-color: #E65100;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 920px) {
+    .admin-panel-sidebar {
+        display: none;
+    }
+
+    .admin-panel {
+        margin-left: 0;
+    }
+
+    .responsive-sidebar-trigger-btn {
+        display: block !important;
+    }
+
+    .admin-panel-header {
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .admin-panel-comp {
+        padding: 1rem;
+    }
+}

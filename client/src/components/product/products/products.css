@@ -1,0 +1,109 @@
+.products-pagination {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;  
+    margin-bottom: 48px; 
+}
+
+.home-layout .filters-alt-container {
+    max-width: 335px;
+    margin: 1.2rem auto;
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.filters-alt-container hr {
+    border-radius: 24px;
+    border: none;
+    height: 1px;
+    background-color: #E9E7E4;
+}
+
+.filters-alt-container .filters-alt-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212322;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 24px;
+    height: 36px;
+    width: 36px;
+}
+
+.filters-alt-container .filters-alt-btn:hover {
+    background-color: #212322da;
+}
+
+.filters-sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 0;
+    font-size: 0.9rem;
+    padding-bottom: 0.8rem;
+}
+
+.filters-sidebar-header span {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #212322;
+}
+
+.filters-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 210px;
+    gap: 1rem;
+    padding: 1rem 1.4rem;
+}
+
+.filters-sidebar-container .filter-headline {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.filter-container-2 ul {
+    margin-top: 12px;
+}
+
+.filter-container-2 ul li {
+    list-style: none;
+    margin: 2px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.filter-container-2 ul li:hover {
+    text-decoration: underline;
+}
+
+.filters-sidebar-container .filter-conatiner-3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.4rem;
+    border: 1px solid #E0E0E0;
+}
+
+.filters-sidebar-container .e-e {
+    font-family: 'Jost', sans-serif;
+}
+
+@media screen and (max-width: 435px) {
+    .products-pagination {
+        padding: 0 1rem;
+    }
+}

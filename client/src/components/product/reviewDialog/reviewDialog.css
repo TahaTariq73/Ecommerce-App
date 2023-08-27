@@ -1,0 +1,6 @@
+.review-dialog-content {
+    min-width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

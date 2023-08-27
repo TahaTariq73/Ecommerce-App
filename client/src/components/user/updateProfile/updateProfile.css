@@ -1,0 +1,7 @@
+.login-signup-container .form-container {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    overflow: hidden;
+}

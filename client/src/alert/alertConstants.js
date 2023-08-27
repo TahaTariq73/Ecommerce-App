@@ -1,0 +1,1 @@
+export const SET_ALERT = "teamly/settings/SET_SNACKBAR";
